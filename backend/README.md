@@ -6,7 +6,15 @@ The Anythink Market backend is Node web app written with [Express](https://expre
 
 To start the app use: `./start.sh` from the backend directory.
 
-Make sure your DB is up and running.
+Make sure your DB is up and running:
+- install `mongod` via brew
+- add conn string as env variable
+- Define a .env file with the db port and local conn string for ease of development.
+```PORT=3001
+MONGODB_URI=mongodb://[USER:PASS]localhost:27017
+```
+  - Notice the change of port to 3001, to avoid a clash with the Frontend
+
 
 ## Dependencies
 
